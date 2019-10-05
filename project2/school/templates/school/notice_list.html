@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h3>NOTICE LIST</h3>
+    
+    {% for n1 in notice_list %}
+        <h2><a href="/school/notice/{{n1.id}}">{{n1.subject}}</a></h2>
+    {% endfor %}
+        
+{% endblock content %}
+    

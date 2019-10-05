@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Notice Detail</h1>
+<h4><a href="/college/notice/">Back</a></h4>
+<h3>{{ notice.subject }}</h3>
+<p>{{ notice.msg}}</p>
+<p>{{ notice.cr_date }}</p>
+
+
+
+{% endblock %}
